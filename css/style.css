@@ -1,0 +1,269 @@
+:root {
+  --light-text: #333;
+  --text: #151515;
+  --gray: #777;
+  --yellow: #feb736;
+  --background: #f1f0f0;
+  --price: #fa0606;
+}
+
+@font-face {
+  font-family: popins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.body {
+  font-family: popins;
+  color: var(--text);
+}
+
+.navbar ul {
+  list-style: none;
+  justify-content: flex-end;
+  margin-top: 29px;
+}
+
+.navbar ul li {
+  padding: 8px 20px;
+}
+
+.navbar ul li:hover {
+  background-color: var(--yellow);
+}
+
+.navbar ul li:hover a {
+  color: #fff;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: popins;
+}
+
+.bg-slider {
+  background-image: url(../images/slider_1.png);
+  height: 600px;
+}
+
+.feature-item {
+  background-color: var(--yellow);
+  padding: 16px 16px 16px 4px;
+}
+
+.feature-item:hover img {
+  transform: rotateY(360deg);
+  transition: all 0.4s ease-out;
+}
+
+.feature-item img {
+  transition: all 0.3s ease-out;
+}
+
+.feature-content h3 {
+  font-family: oswald;
+  font-size: 28px;
+  color: var(--text);
+}
+
+.feature-content p {
+  font-family: popins;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.title h2 {
+  font-family: oswald;
+  font-size: 36px;
+  color: var(--text);
+}
+
+.title p {
+  font-family: popins;
+  font-size: 16px;
+  left: 26px;
+  color: var(--gray);
+  width: 62%;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.product-item {
+  background-color: var(--background);
+  padding-top: 16px;
+}
+
+.product-item h4 {
+  font-family: oswald;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--light-text);
+}
+
+.product-item p {
+  font-family: popins;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  color: var(--price);
+  text-align: center;
+  padding: 12px 0 20px;
+}
+
+.bg-offer {
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offer-content {
+  color: #fff;
+  padding: 100px 0;
+  margin-top: 64px;
+}
+
+.offer-content h4 {
+  font-family: oswald;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.offer-content span {
+  color: var(--yellow);
+}
+
+.offer-content h2 {
+  font-family: oswald;
+  font-size: 36px;
+}
+
+.offer-content p {
+  font-family: popins;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  width: 40%;
+  margin: 10px auto;
+}
+
+.news-item h3 {
+  font-family: oswald;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--light-text);
+  margin-top: 8px;
+}
+
+.news-item p {
+  font-family: popins;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--gray);
+  margin-top: 4px;
+}
+
+.bg-footer {
+  background-color: var(--text);
+}
+
+.footer-content {
+  color: #fefefe;
+  padding: 39px 0;
+  font-family: roboto;
+}
+
+.footer-info p {
+  /* font-family: roboto; */
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 16px;
+}
+
+.footer-title {
+  /* font-family: roboto; */
+  font-size: 22px;
+  line-height: 30px;
+  margin: 2px 0 26px;
+}
+
+.my-account ul {
+  list-style: none;
+}
+
+.my-account ul li a {
+  text-decoration: none;
+  color: #fefefe;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#contact-form input {
+  font-family: roboto;
+  font-size: 14px;
+  line-height: 30px;
+  outline: none;
+}
+
+#contact-form input[type="email"] {
+  background-color: var(--text);
+  border: 1px solid #fefefe;
+  padding: 4px 16px;
+  box-sizing: border-box;
+  flex: 1;
+  color: #fefefe;
+  /* border-right: none; */
+}
+
+#contact-form ::-webkit-input-placeholder {
+  color: #fefefe;
+}
+
+#contact-form :-moz-placeholder {
+  color: #fefefe;
+}
+
+#contact-form ::-moz-placeholder {
+  color: #fefefe;
+}
+
+#contact-form :-ms-input-placeholder {
+  color: #fefefe;
+}
+
+#contact-form input[type="submit"] {
+  background-color: var(--yellow);
+  border: none;
+  padding: 5px 38px;
+  /* margin-left: -2px; */
+  cursor: pointer;
+}
+
+.info {
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 4px;
+}
+
+.info i {
+  padding-right: 6px;
+  font-size: 14px;
+}
